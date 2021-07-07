@@ -1,0 +1,169 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Fan",
+      "price": "100.3",
+      "description": "The Orient Aero Series is a range of premium fans which are governed by the core principle of aerodynamics applied in aircrafts and Formula One cars. They are unmatched in terms of speed and noise control as a result of technological marvels that reduce friction and air turbulence like never before.",
+      "company_name": "Oreint",
+      "image": "https://www.orientelectric.com/images/gallery/ARETA;-Matt-Black-Pearl-Metallic-White.png",
+      "qty": 1,
+      "category": "Home Appliances",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "Tubelight",
+      "price": "25.3",
+      "description": "LED retrofit Tube which offers excellent energy saving and maintenance-free operation is an ideal solution for replacing T8 fluorescent lamps in the existing luminaires. Model POWERLINE SP Type LED TUBE Wattage 20W. Wattage 20W CCT 6000K Length(in mm) 1199 Diameter/Width(in mm) Ø28 Lumens 2000.",
+      "company_name": "Oreint",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/21sHA-8Z-ML._AC_.jpg",
+      "qty": 1,
+      "category": "Home Appliances",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "name": "Table",
+      "price": "30.3",
+      "description": "Royal specialized in the manufacture of dining room, living room, library, and bedroom furniture “for persons of wealth, who wish a most distinguished home culture and refinement about reproach.” Pieces were expensive because of the amount of hand-painted decoration, marquetry, custom fabrics, and imported woods.",
+      "company_name": "Royal Furniture",
+      "image": "https://images.unsplash.com/photo-1570993492881-25240ce854f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=728&q=80",
+      "qty": 1,
+      "category": "Furniture",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "name": "Chair",
+      "price": "33.5",
+      "description": "Furniture refers to movable objects intended to support various human activities such as seating (e.g., chairs, stools, and sofas), eating (tables), and sleeping (e.g., beds). ... In addition to furniture's functional role, it can serve a symbolic or religious purpose.",
+      "company_name": "Royal Furniture",
+      "image": "https://images.unsplash.com/photo-1517705008128-361805f42e86?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhaXJ8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "qty": 1,
+      "category": "Furniture",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "name": "Sofa",
+      "price": "60",
+      "description": "Woodworks operates from a fifty thousand square foot manufacturing facility located in the Fraser Valley region of British Columbia, Canada. Our plant is renowned in the woodworking industry for its state of the art equipment and layout.The craftsman at Woodworks are a major part of the Company’s success, many have been with us since the early eighties when the company developed from a one man operation. The entire staff is committed to providing you with a high degree of excellence in Oak and Maple furnishings built to last a lifetime.",
+      "company_name": "Woodworks",
+      "image": "https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c29mYXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "qty": 1,
+      "category": "Furniture",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "name": "Dining Table",
+      "price": "40.8",
+      "description": "A table is an item of furniture with a flat top and one or more legs, used as a surface for working at, eating from or on which to place things.[1][2] Some common types of table are the dining room table, which is used for seated persons to eat meals; the coffee table, which is a low table used in living rooms to display items or serve refreshments; and the bedside table, which is used to place an alarm clock and a lamp. There are also a range of specialized types of tables, such as drafting tables, used for doing architectural drawings, and sewing tables.",
+      "company_name": "Woodworks",
+      "image": "https://images.furnituredealer.net/img/dealer/711/upload/landing-page/dining%20room/c1842%20jeff%20724x390.jpg",
+      "qty": 1,
+      "category": "Furniture",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "name": "Fasttrack Reflex 2.0",
+      "price": "85.1",
+      "description": "The new Fastrack Reflex 2.0 Activity Tracker comes with all the features one could ask for! It comes in three colours that you can use to accentuate your athleisure, casual or party attire. Not only does it look uber cool in this cool grey & electric blue accent, further the TPU (Thermoplastic Polyurethane) strap ensures it gives you a snugfit while staying light on your wrist! It is a fitness band with smartwatch features. The band has Steps, Distance and Calorie Tracker, Sleep Tracker, Call & SMS Alerts, OLED Display, 10 Days Power Reserve, Vibration Alarm, Sedentary Reminder and is IPX6 Water Resistant. This band is compatible with both IOS and Android OS. It has a secure 'Pin' based pairing with your phone, for better protection. And, all of this at a price that is hard match anywhere else with quality and promise of the brand Fastrack. Move on and get one for yourself!",
+      "company_name": "Fastrack",
+      "image": "https://staticimg.titan.co.in/Fastrack/Catalog/SWD90059PP05_3.jpg?pView=pdp",
+      "qty": 1,
+      "category": "Fashion",
+      "featured": true
+    },
+    {
+      "id": 8,
+      "name": "Denim Backpack",
+      "price": "170",
+      "description": "Created with perfection to make heads turn, this Fastrack blue denim tote bag is an accessory that all women ought to have in their wardrobe. This shoulder bag can perfectly complement all your casual attire and be a great companion during your outings. This tough and sturdy bag crafted in denim material is very durable and spacious. Apart from the main zipped compartment, it also features three small quick-access pockets on the exterior that are also zipped to keep your valuables safely.",
+      "company_name": "Fastrack",
+      "image": "https://the-collective.imgix.net/img/app/product/4/477514-3673878.jpg?w=610&auto=format",
+      "qty": 1,
+      "category": "Fashion",
+      "featured": false
+    },
+    {
+      "id": 9,
+      "name": "Bug Eye Shiny Black",
+      "price": "45.5",
+      "description": "Unapologetically fashionable sunglasses from Fastrack Oversized shaped sunglasses made form Composite, this comes in a combination of Black front and Black temple with Gradient Brown color Polycarbonate lens",
+      "company_name": "Fastrack",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71H3tsIqWfL._AC_UL1500_.jpg",
+      "qty": 1,
+      "category": "Fashion",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "name": "iphone x",
+      "price": "130.3",
+      "description": "The iPhone X used a glass and stainless-steel form factor and bezel-less design, shrinking the bezels while not having a chin, unlike many Android phones. It was the first iPhone to use an OLED screen. The home button's fingerprint sensor was replaced with a new type of authentication called Face ID, which used sensors to scan the user's face to unlock the device. This face-recognition capability also enabled emojis to be animated following the user's expression (Animoji). With a bezel-less design, iPhone user interaction changed significantly, using gestures to navigate the operating system rather than the home button used in all previous iPhones. At the time of its November 2017 launch, its price tag of US$999 also made it the most expensive iPhone ever, with even higher prices internationally due to additional local sales and import taxes.",
+      "company_name": "iphone",
+      "image": "https://images.unsplash.com/photo-1589570844624-8606f81f7eb3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+      "qty": 1,
+      "category": "Mobiles",
+      "featured": false
+    },
+    {
+      "id": 11,
+      "name": "OnePlus 9T",
+      "price": "150.3",
+      "description": "The OnePlus 9 and 9 Pro have similar designs to that of the previous generation OnePlus 8 and 8 Pro, with Gorilla Glass 5 on the front and back, and a “hole punch” style camera the upper left-hand corner. The 9's screen is flat with a plastic frame, while the 9 Pro's screen is curved with an aluminum frame. Only the 9 Pro has an official IP Code (IP68); the regular OnePlus 9 is claimed by OnePlus to have water resistance, but has no official IP certification.[6] The OnePlus 9 is available in three colors: Winter Mist, Arctic Sky, and Astral Black. The OnePlus 9 Pro is available in three different colors: Morning Mist, Pine Green, and Stellar Black.All colors ship with a glossy, Gorilla Glass back unlike the previous generation which had matte back options.",
+      "company_name": "OnePlus",
+      "image": "https://images.unsplash.com/photo-1616332544207-7f3888d0373a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+      "qty": 1,
+      "category": "Mobiles",
+      "featured": true
+    },
+    {
+      "id": 12,
+      "name": "Laptop",
+      "price": "250.7",
+      "description": "Lenovo ThinkPad is a Windows 10 laptop with a 14.00-inch display that has a resolution of 1920x1080 pixels. It is powered by a Core i7 processor and it comes with 12GB of RAM. The Lenovo ThinkPad packs 256GB of SSD storage. Graphics are powered by Intel HD Graphics 520.",
+      "company_name": "Lenovo",
+      "image": "https://images.unsplash.com/photo-1559163499-413811fb2344?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxhcHRvcHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "qty": 1,
+      "category": "Electronics",
+      "featured": true
+    },
+    {
+      "id": 13,
+      "name": "Earbuds 225 rockerz",
+      "price": "20.3",
+      "description": "These earbuds feature Bluetooth 5.0, up to 12-hours Playback Time, and a Mono Mode for convenient and comfortable use. These are in-ear wireless earbuds without the hassles of cables. They fit securely in your ears, and the compact charging case lets you enjoy music for up to 12 hours.",
+      "company_name": "Phillips",
+      "image": "https://i.gadgets360cdn.com/large/boat_airdopes_441_1591597161381.jpg?downsize=950:*&output-quality=80&output-format=webp",
+      "qty": 1,
+      "category": "Electronics",
+      "featured": false
+    },
+    {
+      "id": 14,
+      "name": "Trimmer",
+      "price": "40",
+      "description": "The Signature series trimmers are designed to honour and celebrate the stories of Indians who shape their own destiny. Inspire the world with your success story. Take the first step to be #SELFMADE.Trim your stubble beard with our new Lift & Trim system: the comb lifts and guides the hairs to the level of the blades for an even trim.",
+      "company_name": "Phillips",
+      "image": "data:image/jpeg;base64,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",
+      "qty": 1,
+      "category": "Electronics",
+      "featured": false
+    },
+    {
+      "id": 15,
+      "name": "Bat",
+      "price": "13",
+      "description": "Prototype of the MRF brand ambassador's bat. Carefully selected from premium quality English Willow. Optimum Balance with thick edges and shoulder.MRF features bats that are made from high-quality materials. So, become the best batsman you aspire to be with the right sports equipment by your side. Bats from MRF are meant for those who take cricket seriously. So, buy bats from MRF today and practise cricket with your peers.",
+      "company_name": "MRF",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS37HLyljsQOU6nWctB2BiJld_I2vsSVJlgnA&usqp=CAU",
+      "qty": 1,
+      "category": "sports",
+      "featured": true
+    }
+  ]
+}

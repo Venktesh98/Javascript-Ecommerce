@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+      integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/productdetails.css" />
+  </head>
+  <body onload="productDetails()">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="../index.html">Home</a>
+            <a class="nav-link active" href="../pages/products.html"
+              >Products</a
+            >
+            <a class="nav-link active" href="#">About</a>
+          </div>
+          <a class="heading-content">Comfy</a>
+        </div>
+
+        <!-- Cart icon -->
+        <div class="cart-badge">
+          <p class="cart-icon">
+            <i
+              class="fas fa-shopping-cart fa fa-lg cart-image-icon mt-3"
+              onclick="openNav()"
+            ></i>
+            <span class="badge badge-icon mr-1" id="total-cart-count">0</span>
+          </p>
+          <span class="logout-icon fa-lg" onclick="logout()"
+            ><i class="fas fa-power-off"></i
+          ></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Product Detail Content -->
+    <div class="container">
+      <nav class="navbar navbar-light bg-light">
+        <div id="product-content"></div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="display-card"></div>
+        </div>
+        <div class="col">
+          <div id="product-body"></div>
+        </div>
+
+        <!-- Side Drawer -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <h4 class="your-cart">Your Cart</h4>
+          <div id="displayCartItems"></div>
+          <span id="no-items">
+            ¯\_(ツ)_/¯
+            <p>No Items Yet!</p>
+          </span>
+          <div class="total-cart-price ml-2 mt-2">
+            <strong>Total price:</strong> $<span id="total-cart"></span>
+          </div>
+          <div class="clear-cart-button">
+            <button class="btn btn-warning" onclick="clearCart();closeNav();">
+              Clear Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- backdrop -->
+    <div id="backdrops" onclick="closeNav()"></div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.js"
+      integrity="sha512-ia48mJh6IXv6baAI07Ib/crgsG/MD4tbSnOndWLo3GSExMhYsn1xPbni40VamCaXWk79t1dxi/JahsqOFazkew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Route Protection -->
+    <script>
+      let isLoggedIn = JSON.parse(localStorage.getItem("loggedIn"));
+      if (!isLoggedIn) {
+        window.location.href = "../index.html";
+      }
+    </script>
+
+    <!-- custom js -->
+    <script src="../js/productdetails.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>

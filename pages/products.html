@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+      integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/productdetails.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body onload="displayAllProducts()">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="../index.html">Home</a>
+            <a class="nav-link active" href="../pages/products.html" onclick="displayAllProducts()">Products</a>
+            <a class="nav-link active" href="#">About</a>
+          </div>
+          <a class="heading-content">Comfy</a>
+        </div>
+
+        <!-- Cart icon -->
+        <div class="cart-badge">
+          <p class="cart-icon">
+            <i
+              class="fas fa-shopping-cart fa-lg cart-image-icon mt-3"
+              onclick="openNav()"
+            ></i>
+            <span class="badge badge-icon mr-1" id="total-cart-count">0</span>
+          </p>
+          <span class="logout-icon fa-lg" onclick="logout()"
+            ><i class="fas fa-power-off"></i
+          ></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container">
+      <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mt-3 mb-3 brand home-content">Home / Products</span>
+      </nav>
+    </div>
+
+    <!-- Side and All products section with Company names -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <input
+            class="form-control mr-sm-2"
+            id="searchInput"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            onkeyup="searchProducts()"
+          />
+          <ul class="company-names">
+            <li class="mt-2 mb-1"><strong>Company Names</strong></li>
+            <li
+              class="company-names-list"
+              id="all"
+              onclick="filterByCompanyName(this.id)"
+            >
+              All
+            </li>
+            <li
+              class="company-names-list"
+              id="Oreint"
+              onclick="filterByCompanyName(this.id)"
+            >
+              Oreint
+            </li>
+            <li
+              class="company-names-list"
+              id="rf"
+              onclick="filterByCompanyName(this.id)"
+            >
+              Royal Furniture
+            </li>
+            <li
+              class="company-names-list"
+              id="wf"
+              onclick="filterByCompanyName(this.id)"
+            >
+              Woodworks
+            </li>
+            <li
+              class="company-names-list"
+              id="fst"
+              onclick="filterByCompanyName(this.id)"
+            >
+              Fastrack
+            </li>
+            <li
+              class="company-names-list"
+              id="ipn"
+              onclick="filterByCompanyName(this.id)"
+            >
+              iphone
+            </li>
+            <li
+              class="company-names-list"
+              id="op"
+              onclick="filterByCompanyName(this.id)"
+            >
+              OnePlus
+            </li>
+            <li
+              class="company-names-list"
+              id="leno"
+              onclick="filterByCompanyName(this.id)"
+            >
+              Lenovo
+            </li>
+            <li
+              class="company-names-list"
+              id="phl"
+              onclick="filterByCompanyName(this.id)"
+            >
+              Phillips
+            </li>
+            <li
+              class="company-names-list"
+              id="mrf"
+              onclick="filterByCompanyName(this.id)"
+            >
+              MRF
+            </li>
+          </ul>
+          <p>Filter Price:
+            <span id="filter-price-value">0</span>
+          </p>
+          <input
+            type="range"
+            id="range-input"
+            min="0"
+            max="400"
+            value="10"
+            onmouseup="filterByPrice()"
+          />
+        </div>
+
+        <div class="col-md-10">
+          <div class="row" id="display"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side Navbar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <h4 class="your-cart">Your cart</h4>
+      <div id="displayCartItems"></div>
+      <span id="no-items">
+        ¯\_(ツ)_/¯
+        <p>No Items Yet!</p>
+      </span>
+      <div class="total-cart-price ml-2 mt-2">
+        <strong>Total price:</strong> $<span id="total-cart"></span>
+      </div>
+      <div class="clear-cart-button clear-cart-data">
+        <button class="btn btn-warning" onclick="clearCart();closeNav();">
+          Clear Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- backdrop -->
+    <div id="backdrops" onclick="closeNav()"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.js"
+      integrity="sha512-ia48mJh6IXv6baAI07Ib/crgsG/MD4tbSnOndWLo3GSExMhYsn1xPbni40VamCaXWk79t1dxi/JahsqOFazkew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Route protection -->
+    <script>
+      let isLoggedIn = JSON.parse(localStorage.getItem("loggedIn"));
+      if (!isLoggedIn) {
+        window.location.href = "../index.html";
+      }
+    </script>
+
+  <!-- custom js -->
+    <script src="../js/productdetails.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Login</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label>Username</label>
+          <input type="text" id="username" placeholder="Enter your Name" />
+        </div>
+
+        <div class="form-control">
+          <label>Password</label>
+          <input
+            type="Password"
+            placeholder="Enter your Password"
+            id="password"
+          />
+        </div>
+
+        <button class="btn" onclick="loginData(event)" id="login-btn">
+          Login
+        </button>
+        <br />
+        <a href="SignUp.html" id="signup">Sign-Up</a>
+      </form>
+    </div>
+
+    <!-- password hash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <!-- custom js -->
+    <script src="../js/validations.js"></script>
+    <script src="../js/auth.js"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+/* Side Drawer */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: #faf9f6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a:hover {
+  color: #807878;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  font-size: 36px;
+  color: black;
+  cursor: pointer;
+}
+.close-btn-nav {
+  position: relative;
+  top: -15%;
+  left: 2%;
+  font-size: 36px;
+  color: black;
+  cursor: pointer;
+}
+h4 {
+  text-align: center;
+  font-weight: 400;
+}
+.total-cart-price {
+  font-weight: 300;
+}
+.product-drawer-page {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+.drawer-page {
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.product-details p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.image-div {
+  margin-left: 5%;
+  border-radius: 20px;
+  /* border: 1px solid black; */
+  height: 70px;
+  width: 100px;
+  object-fit: cover;
+}
+.product-div {
+  margin-left: 5%;
+  /* border: 1px solid black; */
+  height: 70px;
+}
+.product_image {
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  border-radius: 2px;
+}
+.product_image_thumb {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+.quantity-div {
+  margin-left: 20%;
+  /* border: 1px solid black; */
+  height: 70px;
+}
+.quantity-div p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.remove,
+.increment-cart,
+.decrement-cart {
+  cursor: pointer;
+  color: red;
+}
+.clear-cart-button {
+  position: fixed;
+  bottom: 5%;
+  /* margin-top: 120%; */
+  width: 150px;
+  margin-left: 6.5%;
+  /* background-color: aquamarine; */
+}
+.clear-cart-button button {
+  width: 100%;
+}
+.increment-icon {
+  cursor: pointer;
+}
+
+/* Navbar */
+.nav-link {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.heading-content {
+  margin-left: 35%;
+  font-family: "Courgette", cursive;
+  color: black;
+  font-weight: 200;
+}
+.cart-badge {
+  margin-top: -1%;
+}
+.badge {
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+.cart-image-icon {
+  position: absolute;
+  right: 10.5%;
+}
+.home-content {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+/* Product Details */
+#prodouct-details {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.product-name {
+  font-weight: 300;
+}
+.product-company {
+  font-style: italic;
+  text-transform: uppercase;
+  color: #807878;
+}
+.add-to-cart {
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(255, 182, 87);
+  border-radius: 3px;
+  font-size: small;
+  border: none;
+  width: 30%;
+  border: 1px solid rgb(255, 182, 87);
+  margin-bottom: 2%;
+}
+.add-to-cart:hover {
+  background-color: white;
+  border: 1px solid rgb(250, 152, 23);
+  font-weight: 500;
+  color: rgb(236, 137, 8);
+}
+.your-cart {
+  margin-bottom: 18%;
+}
+#no-items {
+  font-size: 50px;
+  margin-left: 2.8rem;
+  text-align: center;
+}
+#no-items > p {
+  font-size: 25px;
+  /* text-align: center; */
+  color: red;
+}
+.logout-icon {
+  position: absolute;
+  right: 7.5%;
+  top: 1.2rem;
+}
+
+/* Card Display */
+.card-text {
+  height: fit-content;
+  text-align: center;
+  line-height: 10px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+#card-text-name:hover {
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Zoom image */
+.zoom-image-div {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.zoom-image-div img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.zoom-image-div:hover img {
+  transform: scale(1.5);
+}
+
+/* backdrop */
+#backdrops {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* z-index: 20; */
+  background-color: rgba(0, 0, 0, 0.5);
+}
